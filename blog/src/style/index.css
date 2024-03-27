@@ -1,0 +1,13 @@
+@import "main.css";
+
+#cards {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#cards > div {
+    background-color: #e7e6e6;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}

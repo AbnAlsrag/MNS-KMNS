@@ -1,53 +1,14 @@
-const display = document.getElementById("display");
-const submit_btn = document.getElementById("submit-btn");
-const clear_btn = document.getElementById("clear-btn");4
-const nums = document.getElementById("nums");
-const ops = document.getElementById("ops");
+const login_btn = document.getElementById("login-btn");
+const name_input = document.getElementById("name-input");
+const birth_input = document.getElementById("birth-input");
+const theme_input = document.getElementById("theme-input");
 
-// let can_equal = false;
-// let had_equal = false;
-
-const OPS = ["+", "-", "*", "/", "="];
-
-function SplitEquation(equation) {
-    let first;
-    let second;
-    
-    for (let i = 0; i < equation.length; i++) {
-        if (equation[i] === "=") {
-            first = equation.slice(0, i);
-            second = equation.slice(i + 1);
-            return [first, second];
-        }       
-    }
-}
-
-function CheckEquation(equation) {
-    let eq = SplitEquation(equation);
-
-    if (eval(eq[0]) == eval(eq[1])) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-for (let i = 0; i < 10; i++) {
-    nums.children[i].onclick = () => {
-        display.textContent += "" + i;
-    };
-}
-
-for (let i = 0; i < ops.children.length; i++) {
-    ops.children[i].onclick = () => {
-        display.textContent += OPS[i];
-    }
-}
-
-clear_btn.onclick = () => {
-    display.textContent = "";
-};
-
-submit_btn.onclick = () => {
-    console.log(CheckEquation(display.textContent));
-}
+login_btn.addEventListener("click", () => {
+    const name = name_input.value;
+    const birth = birth_input.value;
+    const theme = theme_input.value;
+    localStorage.setItem("name", name);
+    localStorage.setItem("birth", birth);
+    localStorage.setItem("theme", theme);
+    location.href = "kidcalc.html";
+});

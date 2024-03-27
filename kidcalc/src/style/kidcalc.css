@@ -1,0 +1,33 @@
+#nums {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+}
+
+#nums > button {
+    padding: 30px;
+    font-size: x-large;
+}
+
+#ops {
+    display: inline-grid;
+    grid-template-columns: auto;
+}
+
+#ops > button {
+    padding: 25px;
+    font-size: x-large;
+}
+
+#display {
+    margin: 20px;
+    padding: 20px;
+    font-size: xx-large;
+    text-align: left;
+    color: red;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#submit-btn, #clear-btn {
+    font-size: x-large;
+}

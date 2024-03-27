@@ -3,39 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kidcalc</title>
-
+    <title>Login</title>
     <link rel="stylesheet" href="../style/index.css">
 </head>
 <body>
-    <div id="display">
-
-    </div>
-
-    <div id="buttons">
-        <div id="nums">
-            <button>0</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-        </div>
-
-        <div id="ops">
-            <button>+</button>
-            <button>-</button>
-            <button>x</button>
-            <button>÷</button>
-            <button>=</button>
-        </div>
-
-        <button id="submit-btn">Submit</button>
-        <button id="clear-btn">Clear</button>
+    <div id="content">
+        <h1>LOGIN PAGE</h1>
+        <input type="text" id="name-input">
+        <br>
+        <input type="number" min="14" max="80" id="birth-input">
+        <br>
+        <select name="" id="theme-input">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+        <br>
+        <button id="login-btn">Login</button>
     </div>
 
     <script type="module" src="../script/index.js"></script>

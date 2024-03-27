@@ -1,0 +1,26 @@
+@import "main.css";
+
+header {
+    font-size: medium;
+}
+
+#main-body {
+    display: flex;
+    justify-content: center;
+}
+
+#side-bar > div {
+    width: fit-content;
+    background-color: #e7e6e6;
+}
+
+#writer-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline;
+}
+
+#writer > p {
+    display: inline;
+}
