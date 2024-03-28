@@ -10,5 +10,5 @@ login_btn.addEventListener("click", () => {
 
     localStorage.setItem("theme", theme);
 
-    location.href = "page/kidcalc.html";
+    location.href = "assets/page/kidcalc.html";
 });

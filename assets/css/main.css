@@ -1,3 +1,6 @@
+@import url("index.css");
+@import url("example_blog.css");
+
 header {
     display: flex;
     justify-content: center;

@@ -7,7 +7,7 @@ const info_bar = document.getElementById("info-bar");
 const css = document.getElementById("css");
 const theme = localStorage.getItem("theme");
 
-css.href = `../style/kidcalc-${theme}.css`;
+css.href = `../css/kidcalc-${theme}.css`;
 
 let typed = false;
 let can_eq = false;
