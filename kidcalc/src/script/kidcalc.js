@@ -3,6 +3,11 @@ const submit_btn = document.getElementById("submit-btn");
 const clear_btn = document.getElementById("clear-btn");4
 const nums = document.getElementById("nums");
 const ops = document.getElementById("ops");
+const info_bar = document.getElementById("info-bar");
+const css = document.getElementById("css");
+const theme = localStorage.getItem("theme");
+
+css.href = `../style/kidcalc-${theme}.css`;
 
 let typed = false;
 let can_eq = false;
@@ -114,7 +119,7 @@ for (let i = 0; i < ops.children.length; i++) {
     }
 }
 
-clear_btn.onclick = () => {
+function Clear() {
     display.textContent = "";
     typed = false;
     can_eq = false;
@@ -122,7 +127,9 @@ clear_btn.onclick = () => {
     can_op = false;
     has_num_after_eq = false;
     can_submit = false;
-};
+}
+
+clear_btn.onclick = Clear;
 
 submit_btn.onclick = () => {
     UpdateState();
@@ -130,9 +137,11 @@ submit_btn.onclick = () => {
     if (can_submit) {
         if (CheckEquation(display.textContent)) {
             let old = display.textContent;
-            display.textContent += " (Correct)";
+            info_bar.textContent = " (Correct)";
+            // Clear();
         } else {
-            display.textContent += " (Incorrect)";
+            info_bar.textContent = " (Incorrect)";
+            // Clear();
         }
     }
 }

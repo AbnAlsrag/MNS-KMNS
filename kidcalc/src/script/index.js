@@ -7,8 +7,8 @@ login_btn.addEventListener("click", () => {
     const name = name_input.value;
     const birth = birth_input.value;
     const theme = theme_input.value;
-    localStorage.setItem("name", name);
-    localStorage.setItem("birth", birth);
+
     localStorage.setItem("theme", theme);
-    location.href = "kidcalc.html";
+
+    location.href = "page/kidcalc.html";
 });

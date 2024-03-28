@@ -18,16 +18,6 @@
     font-size: x-large;
 }
 
-#display {
-    margin: 20px;
-    padding: 20px;
-    font-size: xx-large;
-    text-align: left;
-    color: red;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
 #submit-btn, #clear-btn {
     font-size: x-large;
 }

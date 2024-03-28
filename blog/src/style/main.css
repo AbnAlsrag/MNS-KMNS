@@ -12,11 +12,14 @@ footer {
 }
 
 
-@media (max-width:650px){
-    header {
-        display: flex;
-        justify-content: center;
+@media (max-width:650px) {
+    * {
         font-size: 35px;
-        font-family: cursive;
+    }
+}
+
+@media (max-width:400px) {
+    * {
+        font-size: 25px;
     }
 }

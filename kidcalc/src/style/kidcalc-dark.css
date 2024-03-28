@@ -1,0 +1,21 @@
+@import url("kidcalc.css");
+
+body {
+    background-color: black;
+}
+
+#display {
+    margin: 20px;
+    padding: 20px;
+    font-size: xx-large;
+    text-align: left;
+    border: 1px solid rgb(64, 64, 64);
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
+nav {
+    padding: 10px;
+    background-color: rgb(64, 64, 64);
+    font-size: x-large;
+}

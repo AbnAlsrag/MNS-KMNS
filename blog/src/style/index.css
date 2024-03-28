@@ -11,3 +11,23 @@
     padding: 20px;
     font-size: 30px;
 }
+
+nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(64, 64, 64);
+    font-size: 25px;
+    flex-grow: 1;
+}
+
+nav > a {
+    margin: 10px;
+
+    text-decoration: none;
+    color: beige;
+}
+
+h1 {
+    text-align: center;
+}
